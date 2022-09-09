@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node ace serve --watch",
     "build": "node ace build --production",
-    "start": "node ace serve",
+    "start": "ENV_SILENT=true node server.js",
+    "test": "node ace test",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
   },
@@ -27,6 +28,7 @@
     "@adonisjs/lucid": "^16.3.2",
     "@adonisjs/repl": "^3.1.8",
     "luxon": "^2.3.0",
+    "pg": "^8.8.0",
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.21",
